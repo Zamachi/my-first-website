@@ -1,0 +1,1223 @@
+/*global*/
+html {
+  scroll-behavior: smooth;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	
+}
+img{max-height:100%;}
+a{text-decoration:none;}
+
+
+.fa-moon{font-size:15px !important;}
+
+body {
+
+	background-size: 100% 100%;
+	background: linear-gradient(to bottom right, #000000 -26%, #808080 132%);
+}
+
+th,td,tr{
+	
+	padding:5px;
+}
+
+.cleaner{clear: both;}
+
+.wrapper{
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+	padding: 15px;
+}
+
+.icon{display:none;}
+
+#svicher{
+border: 3px solid black;
+min-height: 20px;
+max-width: 70px;
+padding: 15px;
+position: fixed;
+left: 5px;
+bottom: 5px;
+background-color: rgb(128,128,128);
+border-radius:15px;
+z-index:100;
+}
+
+.ikoniceZaSvicher{
+	float:left;
+	color:white;
+}
+
+h1{
+	font-family: 'Baloo Thambi', cursive !important;
+}
+
+h2{
+	font-family: 'Staatliches', cursive !important;
+}
+h3{font-family: 'Yanone Kaffeesatz', sans-serif !important;font-size:1vw;padding: 2%;}
+
+
+/*global*/
+
+/*responsive meni*/
+
+#wrapperResponsive{
+	margin: 0px;
+	padding: 15px;
+	background-color: black;
+	z-index: 1000;
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+#responsiveContainer{width:85%;}
+
+#back, #listica ul li a, #responsiveLista1 li a, #responsiveLista2 li a{
+	font: 3vw/1.5 Arial, Helvetica, sans-serif !important;
+	color: white;
+	text-decoration: none;
+	
+}
+
+#back{
+	padding: 10px;
+	border:none;
+	background-color:black;
+}
+
+#back:hover{
+	text-shadow: 5px 5px 7px white;
+	cursor: pointer;
+	background-color: #555555;
+	border-radius: 10px;
+}
+
+#listica > ul{padding: 15px;list-style:none;}
+
+#listica ul li a:hover{
+	text-shadow: 5px 5px 7px white;
+	background-color: #555555;
+	border-radius: 10px;
+}
+
+#responsiveLista1,#responsiveLista2{
+	padding: 15px;
+	list-style:none;
+	display:none;
+	margin-left:20px;
+}
+
+
+.dropdugme{
+	border: 4px solid gray;
+	border-radius:100%;
+	padding: 2% 30%;
+	background-color:black;
+	color:white;
+}
+.dropdugme i{font-size:3vw;}
+.dugme{float:right;}
+
+
+
+/*responsive meni*/
+
+/* dugme za gore */
+#dugmenceZaGore{
+	
+	display: block;
+	border: 2px solid black; 
+	background-color: gray;
+	position: fixed; 
+	bottom: 5px; 
+	right: 5px; 
+	z-index: 99; 
+	outline: none; 
+	color: white; 
+	padding: 15px; 
+	border-radius: 25%; 
+	font-size: 22px; 
+	text-decoration: none;
+}
+
+#dugmenceZaGore:hover{
+	color: gray;
+	background-color: black;
+	border: 2px solid white;
+}
+/* dugme za gore */
+
+header{
+	min-height: 70px;
+	background-color: rgb(42,42,42);
+	width: 100%;
+	margin: 0px auto;
+	padding-top: 30px;
+}
+
+#mod{
+	
+	color:white;
+	font-weight:bold;
+	text-align:center;
+}
+
+#slikica{
+	margin: 5px auto 0px auto;
+	float: left;
+}
+
+#slikica h1{
+	color: rgb(252,37,62);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 3px 3px 10px rgb(252,37,62);
+	font-size: 1.25vw;
+}
+
+.dropbtn {
+  font-size: inherit;    
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin-left: 5px;
+}
+
+
+/*navigacija*/
+nav > ul{
+	color: white;
+	list-style-type: none;
+	float: left;
+	margin-top:7.5%;
+	margin-left:2%;
+}
+
+nav > ul > li{
+	border-right: 5px solid rgb(252,37,62);
+	float: left;
+	font-size: 16px;
+	padding: 0px 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+nav li a{
+	
+	text-decoration: none; 
+	color: #d6d6d6;
+	
+}
+
+#dropdaunLista1, #dropdaunLista2{
+	list-style-type: none;
+	position: absolute;
+	display: none;
+	background-color: black;
+	z-index: 100;
+}
+
+#dropdaunLista1 li,#dropdaunLista2 li{
+	padding: 10px;
+}
+
+/*media kveri za velicinu ekrana*/
+@media screen and (max-width: 768px) {
+  .navigacija  {display: none;}
+  .icon {
+    float: right;
+    display: block;
+	color:white;
+  }
+  .fa-bars{font-size: 4vw;}
+  .parallax {
+    background-attachment: scroll;
+  }
+  
+  #wrapperSlika{
+	float:none !important;
+	margin: 2% auto !important;
+	text-align: center !important;
+	width: 100% !important;
+  }
+  
+  #kontakt{
+	float:none !important;
+	margin: 5px auto !important;
+	width: 100% !important;
+  }
+  
+  #socialno{
+	float:none !important;
+	margin: 2% auto !important;
+	text-align:center !important;
+	width: 100% !important;
+  }
+  
+  
+  
+  .wrapper form{
+	  float:none !important;
+	  margin: 2% auto !important;
+	  text-align:center !important;
+	  width: 100% !important;
+  }
+  
+  .wrapper form li{
+	  text-align:center !important;
+  }
+  
+  .blokovi{
+	  float:none !important; 
+	  width:100% !important;
+	  margin: 0px auto !important;
+	  padding: 2% 0px;
+  }
+  
+  #prviBlok{
+	height: 25% !important; 
+	 
+  }
+  
+  #drugiBlok{
+	 
+	height: 25% !important; 
+	  
+  }
+  
+  #treciBlok{
+	  
+	height: 25% !important;  
+  }
+  
+  #treciBlok{
+	height: 25% !important;   
+	  
+  }
+  
+  #wrapperListeKontakata ul li{
+	  display: block !important;
+	  margin: 3% auto !important;
+  }
+  
+  
+  
+}
+/*media kveri za velicinu ekrana*/
+
+nav ul li ul li:hover{
+	transition:0.3s;
+	margin:-5px;
+}
+nav ul li:hover, nav ul li ul li:hover{
+	
+	transition:0.3s;
+	background-color:rgb(42,42,42);
+	
+}
+
+nav ul li a:hover, nav ul li ul li a:hover{
+color:white;
+font-weight:bold;
+}
+
+
+/*navigacija*/
+
+/*products*/
+
+.tab{
+	width: 100%;
+	background: linear-gradient(to bottom right, red, rgba(255,255,40,0));
+	overflow:hidden;
+	padding: 2% 0px;
+	min-height: 50px;
+}
+.tab h2{
+	display: inline;
+
+margin-left: 2%;
+	font-size: 2vw;
+}
+
+.wrapperD{
+	float:right;
+	margin: 0px 2% 5px 0px;
+}
+
+.tabDugme{
+	padding: 7px;
+	background-color:rgba(0,0,0,0);
+	border:none;
+	cursor:pointer;
+	margin-right: 10px;
+	font-family: 'Staatliches', cursive !important;
+}
+
+.tabDugme:hover{
+	transition:0.9s;
+	background-color:white;
+	color:red;
+	
+}
+
+#proizvod{
+	margin: 0 auto;
+	
+}
+
+#proizvod p{
+	padding: 5px;
+	font-family: 'Yanone Kaffeesatz', sans-serif !important;
+}
+
+#slajder{
+	background-color:white;
+	float:left;
+	width: 30%;
+	margin: 3px 15px 15px 3px;
+	
+}
+#slajder:hover{
+	box-shadow: inset 0px -25px 50px black;
+	transition: 0.7s;
+}
+
+
+/*products*/
+
+/*specifications*/
+
+.specs{
+	
+	list-style:none;
+	float:left;
+	width: 50%;
+}
+
+#specifikacije ul{
+	margin: 0px auto;
+	
+}
+
+.specs li{
+	color:white;
+	text-align:center;
+	padding: 5px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+}
+#specifikacije{
+	text-align:center;
+	font-size:3vw;
+	color:white;
+	padding: 3%;
+}
+
+/*specifications*/
+
+/*slajder*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+	width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: red;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 45px;
+  margin: 0 2px;
+  background-color: #bbb;
+
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(175,10,10,0.75);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*slajder*/
+
+/*switch*/
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 19px;
+  float:left;
+  margin: 0px 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+/*switch*/
+
+#sadrzaj{
+
+	margin: 0px auto;
+	width: 80%;
+	background-color: gray;
+	min-height: 650px;
+	padding: 1%;
+}
+
+/*about us*/
+
+main{
+	width: 100%;
+	overflow:hidden;
+}
+
+#mainAbout h2{
+	position: relative;
+	bottom: -100%;
+	opacity: 0;
+}
+
+#recAutora{
+	position: relative;
+	top: -100%;
+	background:linear-gradient(to bottom right, #cc3300 -25%, #660033 129%);
+}
+
+.sadrzajAU article{
+	width: 70%;
+	background: linear-gradient(to bottom right, red, black);
+	color:white;
+	font-style:italic;
+	text-align:justify;
+	margin: 0px auto;
+	opacity: 0;
+	overflow:hidden;
+}
+
+.sadrzajAU article p{
+	
+	font-style:italic;
+}
+
+.sadrzajAU > figure, .sadrzajAU > p{opacity: 0;}
+
+.parallax{
+	
+	height:200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:0px auto;
+	opacity: 0;
+}
+
+#parallaxPrva{
+	background-image: url('../img/SlikeZaParalaksu/img1.jpeg');
+	position: relative;
+	top: -100%;
+}
+
+#parallaxDruga{
+	background-image: url('../img/SlikeZaParalaksu/img2.jpeg');
+	position: relative;
+	bottom: -100%;
+}
+
+#parallaxTreca{
+	background-image: url('../img/SlikeZaParalaksu/img3.jpg');
+	position: relative;
+	top: -100%;
+}
+
+#parallaxCetvrta{
+	background-image: url('../img/SlikeZaParalaksu/img4.jpeg');
+	position: relative;
+	bottom: -100%;
+}
+
+#prviRed{
+	position:relative;
+	left: -100%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	
+}
+#drugiRed{
+	position:relative;
+	left: -100%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	
+}
+
+#drugiRed > figure{float:right;}
+
+#treciRed{
+	position:relative;
+	left: -100%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	
+}
+#cetvrtiRed{
+	position:relative;
+	left: -100%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	
+}
+
+#cetvrtiRed > figure{float:right;}
+
+
+#autor{
+	float: right;
+}
+
+main p{
+	color: white;
+	text-align: justify;
+}
+
+main h2{
+	text-align:center;
+	font-size:2vw;
+	color:white;
+	text-shadow: 5px 5px 10px white;
+}
+
+.sadrzajAU{
+	background:linear-gradient(to top right, #cc3300 -25%, #660033 129%);
+	width:80%;
+	margin: 0px auto;
+	right: -100%;
+	text-shadow: 2px 2px 8px white;
+}
+
+main figure img{
+	float:left;
+	padding: 0px 20px 5px 0px;
+	width: 300px;
+	height: auto;
+
+}
+
+/*about us*/
+
+/*products*/
+
+.proizvodi{
+	float:left;
+	padding: 10px 30px;
+	background-color: gray;
+	margin-right: 15px;
+}
+
+.proizvodi ul{
+	padding-left: 10px;
+	
+	
+}
+
+.proizvodi > ul > li{
+	border-bottom: 1px solid black;
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.proizvodi a{
+	
+	text-decoration:none;
+	color:red !important;
+	font-weight: bold;
+}
+
+.proizvodi > ul > li > ul{
+	
+	list-style:none;
+}
+
+.proizvodi h2{
+	font-size: 2vw;
+	color: white !important;
+}
+
+#blokProizvoda{
+	list-style:none;
+	box-sizing: border-box;
+	min-height: 600px;
+	float:left;
+	width:calc(100% - 250px);
+}
+#blokProizvoda ul{
+	width: 100%;
+	list-style:none;
+	float: right;
+	
+}
+
+#blokProizvoda ul li{
+	display:inline-block;
+	padding: 1% 3%;
+	border: 2px solid red;
+	float:left;
+	margin: 0px 5% 8% 1%;
+	width: 20%;
+}
+
+#blokProizvoda ul li:hover{
+	box-shadow: inset 0px -25px 50px black;
+	transition: 0.3s;
+
+}
+
+#blokProizvoda ul li a{
+	
+	text-decoration:none;
+	color:green;
+}
+
+#blokProizvoda ul li a p{
+	text-align: center;
+}
+
+#blokProizvoda ul li figure img{
+	vertical-align: middle;
+	width: 100%;
+}
+
+
+
+/*products*/
+
+/*contact*/
+
+.wrapperForme{
+	
+	width:90%;
+	margin:10px auto 10px auto;
+}
+
+.wrapperForme p {
+	
+	color:white;
+	text-align:center;
+	
+}
+
+.wrapperForme form {overflow:auto;}
+
+#wrapperListeKontakata{
+	list-style:none;
+	margin: 0px auto;
+	background-color:gray;
+	box-shadow: 5px 5px 10px black;
+	padding: 15px;
+	min-height: 250px;
+}
+
+#wrapperListeKontakata h2{color:white;}
+#wrapperListeKontakata ul{margin-top:6%;}
+#wrapperListeKontakata ul p{margin-top: 2%;margin-left:6%;}
+
+#wrapperListeKontakata ul li{
+	display:inline-block;
+	width:32%;
+	margin-left: 3px;
+}
+
+#wrapperListeKontakata h2, #wrapperListeKontakata h3{
+	text-align:center;
+}
+
+#wrapperListeKontakata ul li i{
+	background-color:black;
+	border-radius:100%;
+	color:white;
+	border: 1vw solid gray;
+	font-size:3vw;
+	margin: 0 41%;
+	padding: 5%;
+}
+
+#wrapperListeKontakata ul li i:hover{
+	transition: 0.5s;
+	box-shadow: 5px 5px 10px black;
+	margin-bottom: 5px;
+}
+
+#wrapperListeKontakata ul li p a{
+	
+	text-decoration:none;
+	color:white;
+}
+
+
+.raspored i{
+	font-size:3vw;
+	margin:0px auto;
+	
+}
+
+#forma{
+	color: #999999;
+	border: 3px solid rgb(100,255,255);
+	background-color: #CCCCCC;
+	margin: 0px auto;
+	padding: 15px;
+	border-spacing:2px;
+	box-shadow: inset 0px 0px 20px rgb(100,255,255),2px 20px 24px rgb(100,255,255);
+}
+
+#forma tr td textarea{
+	
+	resize: vertical;
+	width: 100%;
+	
+}
+
+#dugmeZaSlanje{
+	
+	border: 2px solid black;
+	background: linear-gradient(to top, #646464 -33%, #ffffff 100%);
+	box-shadow: inset 0px 5px 10px black;
+	border-radius: 15px;
+	padding:10px;
+	cursor:pointer;
+	margin-left: 37%;
+	display:none;
+}
+
+
+#poljeGresaka{
+	background-color: red;
+	color: black;
+	font-size:10px;
+	display: none;
+	
+}
+
+/*contact*/
+
+/*indeks*/
+
+#vraper{
+	width:100%;
+	background: white;
+	box-shadow: inset 0 0 46px 35px rgb(170,56,84);
+	height: auto;
+	padding: 6% 0px;
+}
+
+#slajderIndex{
+	width: 100%;
+}
+
+#slajdshouKontejner{
+	width:40%;
+	position: relative;
+  margin: auto;
+  padding: 10px;
+}
+
+#vraperBlokova{
+	width: 100%;
+	
+	
+}
+
+.blokovi{
+	float:left;
+	height:500px;
+	overflow:hidden;
+}
+
+.blokovi:hover{
+	box-shadow: inset 0px -10px 20px black;
+	transition: 0.4s;
+	
+}
+
+#prviBlok{
+	width:40%;
+	background:linear-gradient(to bottom right, #000099 -31%, #cc33ff 100%);
+	border-color:gray;}
+	
+#drugiBlok{
+	width:60%;
+	background: linear-gradient(to top right, #660066 1%, #ffff00 103%);
+}
+
+
+
+#treciBlok{
+	width:60%;
+	background:linear-gradient(to top right, #ff3300 -13%, #000066 95%);
+	
+	}
+
+#cetvrtiBlok{
+	width:40%;
+	background: linear-gradient(to top left, #ffffff -31%, #660033 110%);
+	
+}
+
+.slovaBlokova{
+	text-decoration:none;
+
+	
+}
+
+
+.slovaBlokova figure img {
+	width: 100%;
+	z-index: -1;
+
+}
+
+#fcb,#twt,#inst{width:30%;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+
+}
+
+
+
+#fcb:hover,#twt:hover,#inst:hover{
+	-ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari */
+	transform: rotate(360deg);
+  
+}
+
+#parentIkonica{
+	
+	margin-top:5%;
+}
+
+/*indeks*/
+
+/*mapa*/
+
+#natpisMape{
+	text-align:center;
+	font-size:4vw;
+	background-color:rgb(20,180,180);
+}
+
+#map{
+	height: 400px; 
+    width: 100%; 
+	background-color:green;
+}
+
+/*mapa*/
+
+/*FAQ*/
+
+#wrapperFAQ{
+	width: 80%;
+	padding:15px;
+	margin: 0px auto;
+}
+
+#wrapperFAQ > p{float:left;color:red;}
+
+#h2FAQ{
+	font-size:4vw;
+	color:red;
+	float:left;
+	border-bottom:6px solid red;
+	border-left:5px solid red;
+	border-radius: 50%;
+	padding: 5px 9%;
+	box-shadow: 5px 5px 10px;
+}
+
+#listaPitanja{
+	float:left;
+	margin: 10px 20px;
+	padding: 5px 20px;
+	
+}
+#listaPitanja li{
+	cursor:pointer;
+	border-top:1px solid red;
+	border-bottom:1px solid red;
+	padding: 15px;
+}
+#listaPitanja a{color:white;}
+
+#listaPitanja a[href="WhereToBuy.html"],#listaPitanja a[href="about.html"]{text-transform:uppercase;color:red !important;}
+
+.fa-minus::before,.fa-plus::before{
+	color:red;
+}
+
+#listaPitanja li ul,.fa-minus::before{
+	display:none;
+}
+
+#listaPitanja, #listapitanja li ul{
+	list-style:none;
+	width: 85%;
+	margin: 0px auto;
+	color:white;
+	margin: 10px 0px 0px 15px;
+	
+}
+
+#listaPitanja li ul{
+	list-style:none;
+}
+
+#listaPitanja li ul li{
+	border:none;
+	
+}
+
+.activeTab{
+	
+	display:block;
+}
+
+#wrapperFAQ p, #wrapperFAQ p a{
+	font-size:2vw;
+	color:red;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	width: 96%;
+}
+
+.aktivna{
+	border-top: 2px solid red !important;
+	color: red;
+	
+}
+
+/*FAQ*/
+
+/*futer*/
+footer{
+
+	background-color: rgb(42,42,42);
+	color: white;
+	
+}
+
+
+#wrapperSlika{
+	float:left;
+	width:29%;
+	margin:0px 10px 0px 10px;
+}
+.wrapper > img{float: left}
+#kontakt{
+	float: left; 
+	text-align: center; 
+	text-decoration: none;
+	width:29%;
+	margin: 3% 1% 0 1%;
+}
+
+.wrapper > form{
+	display: table-caption; 
+	text-align: center; 
+	line-height:2;
+}
+
+#kontakt > p > a{
+	text-decoration: none; 
+	color: white;
+} 
+
+#socialno{width:31%;overflow:hidden;margin: 3% 0 0 2%;}
+#socialno p{text-align:center;width:100%;}
+
+#socialno > ul {
+	list-style: none;
+	display:table;
+	min-height:50px;
+	margin:auto;
+
+}
+#socialno > ul  li{float: left;}
+
+
+
+
+#imejlInput{
+	padding: 5px;
+	border-radius: 15px;
+	border: 2px solid white;
+	text-align: center;
+	background-color: gray;
+	box-shadow: 3px 3px 10px #CCCCCC;
+	
+}
+
+.wrapper form{
+	margin-left:48%;
+}
+
+.ikonice{color:white; font-size: 3vw;margin: 10px;}
+
+.fa-facebook-f:hover{background-color: rgb(66,103,178);padding:5px;}
+.fa-twitter:hover{background-color: rgb(29,161,242);padding:5px;}
+.fa-instagram:hover{background: linear-gradient(to bottom left, #b900b4 27%, #ffd521 100%); border-radius: 15%;padding:0px 3px;}
+/*futer*/
